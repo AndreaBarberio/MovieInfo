@@ -6,11 +6,11 @@ const Navbar = ({ title }: INavProps) => {
 	return (
 		<nav className="w-full h-12 bg-gray-800 flex items-center justify-between">
 			{title && (
-				<h1 className={`text-white text-lg pl-2 hidden sm:block`}>{title}</h1>
+				<h1 className={`text-white text-lg pl-2 hidden md:block`}>{title}</h1>
 			)}
 
 			<FaFilm
-				className={`text-white text-lg p-2 h-12 w-12 block sm:hidden`}
+				className={`text-white text-lg p-2 h-12 w-12 block md:hidden`}
 				title="Film Icon"
 			/>
 		</nav>
