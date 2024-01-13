@@ -17,23 +17,24 @@ export default function Home() {
 					height: 'calc(100vh - 80px)',
 				}}
 			>
-				{/* Aggiungi overlay semitrasparente */}
 				<div className="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
 
-				<h1 className="text-4xl font-bold mb-6 text-white relative z-10 transform hover:scale-110 transition-transform duration-300">
+				<h1 className="text-4xl font-bold mb-6 text-white relative hidden sm:block z-10 transform hover:scale-110 transition-transform duration-300">
 					Benvenuto a MovieInfo!
 				</h1>
-				<p className="text-lg  mb-8 text-white relative z-10 transform hover:scale-110 transition-transform duration-300">
+				<p className="text-lg hidden sm:block mb-8 text-white relative z-10 transform hover:scale-110 transition-transform duration-300">
 					Esplora il magico mondo del cinema con la nostra vasta collezione di
 					film e serie TV.
 				</p>
 				<Link
-					className="bg-blue-500 text-white px-4 py-2 rounded transition duration-300 hover:bg-blue-600 relative z-10"
+					className="bg-blue-500 text-white p-1 sm:p-2 mb-24 sm:mb-0 rounded transition duration-300 hover:bg-blue-600 relative z-10"
 					href="/movies"
 				>
-					Vai alla lista dei film
+					<span className="sm:inline hidden">Vai alla lista dei film</span>
+					<span className="sm:hidden">Lista film</span>
 				</Link>
 			</div>
+
 			<Footer></Footer>
 		</div>
 	);
